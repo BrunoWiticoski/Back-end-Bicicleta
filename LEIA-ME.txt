@@ -14,7 +14,7 @@ Esta é uma API desenvolvida em NestJS para gerenciamento de pessoas, bicicletas
 
 1. Clone o repositório:
 
-Http
+https://github.com/BrunoWiticoski/Back-end-Bicicleta.git
 
 2. Instale as dependências:
 
