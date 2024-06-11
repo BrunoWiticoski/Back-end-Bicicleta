@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "eaafb16a-edfa-4cc4-90d7-70ad752315da",
+		"name": "Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36159769"
+	},
+	"item": [
+		{
+			"name": "Bicicletas",
+			"item": [
+				{
+					"name": "Listando os cadastros de Bicicleta",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Inserindo cadastro de bicicleta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"5751520f-04b6-4777-a70f-6835f6744808\",\r\n    \"nome\": \"Bruno\",\r\n    \"marca\": \"Caloi\",\r\n    \"modelo\": \"teste2\",\r\n    \"tamanhoaros\": \"ARO 26\",\r\n    \"chassi\": \"2365488565\",\r\n    \"cor\": \"BRANCA\",\r\n    \"codntf\": \"516a5s1da65s1da651651a6ds51dasdasdasd185165\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/bicicletas",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"bicicletas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar cadastro de bicicleta Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"5751520f-04b6-4777-a70f-6835f6744808\",\r\n    \"nome\": \"Bruno\",\r\n    \"marca\": \"Caloi\",\r\n    \"modelo\": \"teste2\",\r\n    \"tamanhoaros\": \"ARO 26\",\r\n    \"chassi\": \"2365488565\",\r\n    \"cor\": \"BRANCA\",\r\n    \"codntf\": \"516a5s1da65s1da651651a6ds51dasdasdasd185165\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/bicicletas/5751520f-04b6-4777-a70f-6835f6744808",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"bicicletas",
+								"5751520f-04b6-4777-a70f-6835f6744808"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar cadastro de bicicleta Copy 2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "localhost:3000/bicicletas/5751520f-04b6-4777-a70f-6835f6744808",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"bicicletas",
+								"5751520f-04b6-4777-a70f-6835f6744808"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Metas",
+			"item": [
+				{
+					"name": "Listando os cadastros de metas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/metas",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"metas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar cadastro de metas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "localhost:4000/metas/5751520f-04b6-4777-a70f-6835f6744808",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"metas",
+								"5751520f-04b6-4777-a70f-6835f6744808"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserindo cadastro de metas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Bruno\",\r\n  \"km\": 10,\r\n  \"tempo\": 60,\r\n  \"media\": \"10 km/h\",\r\n  \"data_corrida\": \"2024-06-06\",\r\n  \"observacao\": \"Esta é uma observação\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/metas",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"metas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar cadastro de metas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"b\",\r\n  \"km\": 10,\r\n  \"tempo\": 60,\r\n  \"media\": \"10 km/h\",\r\n  \"data_corrida\": \"2024-06-06\",\r\n  \"observacao\": \"Esta é uma observação\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/metas/1fb26e4f-242d-4dc9-b1cf-7ce2e395bfcb",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"metas",
+								"1fb26e4f-242d-4dc9-b1cf-7ce2e395bfcb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pessoas",
+			"item": [
+				{
+					"name": "Listando os cadastros de pessoas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/metas",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"metas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserindo cadastro de pessoas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Bruno\",\r\n  \"km\": 10,\r\n  \"tempo\": 60,\r\n  \"media\": \"10 km/h\",\r\n  \"data_corrida\": \"2024-06-06\",\r\n  \"observacao\": \"Esta é uma observação\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/metas",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"metas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar cadastro de pessoas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"b\",\r\n  \"km\": 10,\r\n  \"tempo\": 60,\r\n  \"media\": \"10 km/h\",\r\n  \"data_corrida\": \"2024-06-06\",\r\n  \"observacao\": \"Esta é uma observação\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/metas/1fb26e4f-242d-4dc9-b1cf-7ce2e395bfcb",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"metas",
+								"1fb26e4f-242d-4dc9-b1cf-7ce2e395bfcb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar cadastro de pessoas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "localhost:5000/pessoas/0179ea3f-6d24-4010-bc02-50e11cb8539c",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"pessoas",
+								"0179ea3f-6d24-4010-bc02-50e11cb8539c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

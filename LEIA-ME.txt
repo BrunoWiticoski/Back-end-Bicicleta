@@ -1,0 +1,177 @@
+# API de Cadastro de Pessoas, Cadastro de Bicicletas e Cadastro de Metas
+
+Esta é uma API desenvolvida em NestJS para gerenciamento de pessoas, bicicletas e metas, que inclui operações básicas como criar, listar, atualizar e excluir dados do sistema.
+
+## Tecnologias Utilizadas
+
+- NestJS
+- TypeORM
+- PostgreSQL
+- TypeScript
+- Class Validator
+
+## Instalação
+
+1. Clone o repositório:
+
+Http
+
+2. Instale as dependências:
+
+cd seu-projeto
+npm install
+
+3. Configure o banco de dados PostgreSQL no arquivo `data-source.ts`.
+
+4. Execute as migrações do TypeORM:
+
+npm run typeorm:run
+
+5. Execute os seeds
+
+npm run typeorm-seeds:run
+
+6. Inicie o servidor:
+
+npm run start:dev
+
+## Endpoints
+
+### Listar Dados
+
+GET /pessoas
+GET /bicicletas
+GET /metas
+
+Retorna uma lista de todas as pessoas cadastradas no sistema.
+Retorna uma lista de todas as bicicletas cadastradas no sistema.
+Retorna uma lista de todas as metas cadastradas no sistema.
+
+### Buscar Dados por ID
+
+GET /pessoas/
+GET /bicicletas/
+GET /metas/
+
+Retorna os detalhes de uma pessoa / bicicleta / meta com o ID especificado.
+
+### Criar Pessoa
+
+POST /pessoas
+
+Cria uma nova pessoa com os dados fornecidos no corpo da requisição.
+
+Exemplo de corpo da requisição:
+
+```json
+{
+  "nome": "Fulano de Tal",
+  "cpf": "123.456.789-00",
+  "data_nascimento": "1990-01-01",
+  "generos": "M",
+  "telefone": "(00) 1234-5678",
+  "cidade": "ExemploCity"
+}
+
+PUT /pessoas/:id
+
+Atualiza os dados de uma pessoa com o ID especificado.
+
+Exemplo de corpo da requisição:
+
+{
+  "nome": "Fulano de Tal",
+  "cpf": "123.456.789-00",
+  "data_nascimento": "1990-01-01",
+  "generos": "M",
+  "telefone": "(00) 1234-5678",
+  "cidade": "ExemploCity"
+}
+
+Excluir Pessoa
+
+DELETE /pessoas/:id
+
+Exclui a pessoa com o ID especificado.
+
+### Criar Bicicleta
+
+POST /bicicletas
+
+Cria uma nova bicicleta com os dados fornecidos no corpo da requisição.
+
+Exemplo de corpo da requisição:
+
+```json
+{
+    "nome": "Fulano de Tal",
+    "marca": "Caloi",
+    "modelo": "teste1",
+    "tamanhoaros": "ARO 26",
+    "chassi": "2365488566",
+    "cor": "BRANCA",
+    "codntf": "516a5s1da1da651651a6ds51dasdasdasd185165"
+}
+
+
+PUT /bicicletas/:id
+
+Atualiza os dados de uma bicicleta com o ID especificado.
+
+Exemplo de corpo da requisição:
+
+{
+    "nome": "Fulano de Tal",
+    "marca": "Caloi",
+    "modelo": "teste1",
+    "tamanhoaros": "ARO 26",
+    "chassi": "2365488565",
+    "cor": "BRANCA",
+    "codntf": "516a5s1da65s1da651651a6ds51dasdasdasd185165"
+}
+
+
+Excluir Bicicleta
+
+DELETE /bicicleta/:id
+
+Exclui a bicicleta com o ID especificado.
+
+### Criar Metas
+
+POST /metas
+
+Cria uma nova meta com os dados fornecidos no corpo da requisição.
+
+Exemplo de corpo da requisição:
+
+```json
+{
+  "nome": "Fulano de Tal",
+  "km": 10,
+  "tempo": 5,
+  "media": "2",
+  "data_corrida": "2024-01-01",
+  "observacao": "Esta é uma observação"
+}
+
+PUT /metas/:id
+
+Atualiza os dados de uma meta com o ID especificado.
+
+Exemplo de corpo da requisição:
+
+{
+  "nome": "Fulano de Tal",
+  "km": 10,
+  "tempo": 60,
+  "media": "10 km/h",
+  "data_corrida": "2024-06-06",
+  "observacao": "Esta é uma observação"
+}
+
+Excluir Meta
+
+DELETE /metas/:id
+
+Exclui a meta com o ID especificado.
